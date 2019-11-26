@@ -1,0 +1,12 @@
+oi a {
+    color: #1f8072;
+}
+
+body {
+    background: white url("images/background.gif") no-repeat;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+}

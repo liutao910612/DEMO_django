@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome to voting system</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
 </head>
 <body>
 {% if latest_question_list %}
     <ul>
         {% for question in latest_question_list %}
             <br/>
-            <li style="background-color: antiquewhite;height:30px;width: 200px;border-radius: 2px">
+            <ol style="background-color: antiquewhite;height:30px;width: 200px;border-radius: 2px">
                 <a href={% url 'polls:detail' question.id %}>{{ question.question_text }}</a>
-            </li>
+            </ol>
         {% endfor %}
     </ul>
 {% else %}
