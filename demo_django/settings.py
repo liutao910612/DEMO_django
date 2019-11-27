@@ -30,6 +30,7 @@ ALLOWED_HOSTS = ['testserver', '127.0.0.1']
 
 INSTALLED_APPS = [
     'polls.apps.PollsConfig',
+    'webblog.apps.WebblogConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
